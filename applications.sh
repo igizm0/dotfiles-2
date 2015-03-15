@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
+# Fonts
+cp -R "${HOME}/.dotfiles/applications/fonts/*.ttf" "${HOME}/Library/Fonts/"
+
 # Iterm2
 open "${HOME}/.dotfiles/applications/facetheheat.itermcolors"
-cp -r "${HOME}/.dotfiles/applications/com.googlecode.iterm2.plist" "${HOME}/Library/Preferences/"
+cp -R "${HOME}/.dotfiles/applications/com.googlecode.iterm2.plist" "${HOME}/Library/Preferences/"
 
 # Terminal
 osascript <<EOD
@@ -41,7 +44,7 @@ EOD
 # Sublime Text
 sublime_path="${HOME}/Library/Application\ Support/Sublime\ Text*/Packages/User/"
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" "/usr/local/bin/subl"
-cp -r "${HOME}/.dotfiles/applications/highlighter.sublime-settings" "${sublime_path}" 2> /dev/null
-cp -r "${HOME}/.dotfiles/applications/Preferences.sublime-settings" "${sublime_path}" 2> /dev/null
-cp -r "${HOME}/.dotfiles/applications/*.aff" "${sublime_path}" 2> /dev/null
-cp -r "${HOME}/.dotfiles/applications/*.dic" "${sublime_path}" 2> /dev/null
+cp -R "${HOME}/.dotfiles/applications/highlighter.sublime-settings" "${sublime_path}" 2> /dev/null
+cp -R "${HOME}/.dotfiles/applications/Preferences.sublime-settings" "${sublime_path}" 2> /dev/null
+cp -R "${HOME}/.dotfiles/applications/*.aff" "${sublime_path}" 2> /dev/null
+cp -R "${HOME}/.dotfiles/applications/*.dic" "${sublime_path}" 2> /dev/null

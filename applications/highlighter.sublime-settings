@@ -1,0 +1,7 @@
+{
+    "highlighter_enabled": true,
+    "highlighter_regex": "((?<=[a-zA-Z])[А-Яа-я])|([А-Яа-я](?=[a-zA-Z]))",
+    "highlighter_scope_name": "invalid",
+    "highlighter_max_file_size": 1048576,
+    "highlighter_delay": 3000
+}

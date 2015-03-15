@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Fonts
-cp -R "${HOME}/.dotfiles/applications/fonts/*.ttf" "${HOME}/Library/Fonts/"
+cp -R ${HOME}/.dotfiles/applications/fonts/*.ttf "${HOME}/Library/Fonts/"
 
 # Iterm2
 open "${HOME}/.dotfiles/applications/facetheheat.itermcolors"
@@ -42,7 +42,7 @@ end tell
 EOD
 
 # Sublime Text
-sublime_path="${HOME}/Library/Application\ Support/Sublime\ Text*/Packages/User/"
+sublime_path="${HOME}/Library/Application Support/Sublime Text*/Packages/User/"
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" "/usr/local/bin/subl"
 cp -R "${HOME}/.dotfiles/applications/highlighter.sublime-settings" "${sublime_path}" 2> /dev/null
 cp -R "${HOME}/.dotfiles/applications/Preferences.sublime-settings" "${sublime_path}" 2> /dev/null

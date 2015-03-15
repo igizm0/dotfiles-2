@@ -18,3 +18,5 @@ brew install nmap
 brew install p7zip
 brew install wget --with-iri
 brew install mc
+
+chsh -s /bin/zsh

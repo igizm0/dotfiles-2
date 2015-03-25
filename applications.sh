@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `osx.sh` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 # Fonts
 cp -R ${HOME}/.dotfiles/applications/fonts/*.ttf "${HOME}/Library/Fonts/"
 
@@ -48,3 +54,11 @@ cp -R "${HOME}/.dotfiles/applications/highlighter.sublime-settings" "${sublime_p
 cp -R "${HOME}/.dotfiles/applications/Preferences.sublime-settings" "${sublime_path}" 2> /dev/null
 cp -R "${HOME}/.dotfiles/applications/*.aff" "${sublime_path}" 2> /dev/null
 cp -R "${HOME}/.dotfiles/applications/*.dic" "${sublime_path}" 2> /dev/null
+
+# TaskPaper
+cp -R  "${HOME}/.dotfiles/applications/facetheheat.taskpapertheme" "/Users/pavel/Library/Application Support/TaskPaper/Themes/"
+
+# Pip
+sudo easy_install pip
+
+

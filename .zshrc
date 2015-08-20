@@ -14,6 +14,7 @@ autoload -U colors && colors
 autoload -U compinit && compinit
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
 setopt menu_complete
 
@@ -35,4 +36,5 @@ source ~/.zsh/autocomplete.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/highlighting.zsh
+source ~/.zsh/completion.zsh
 source ~/.zsh/prompt.zsh

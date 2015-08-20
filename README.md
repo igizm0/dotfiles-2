@@ -11,7 +11,6 @@ $ xcode-select --install
 $ git clone https://github.com/facetheheat/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles && ./bootstrap.sh
 $ sh brew.sh
-$ sh cask.sh
 $ sh osx.sh
 $ sh applications.sh
 ```

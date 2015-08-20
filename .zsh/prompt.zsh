@@ -1,6 +1,7 @@
 
 #PROMPT="%{$fg[white]$bg[green]%}%~%{$fg[white]%}%(!.#.$) "
-PROMPT="%{$fg[green]%}%T%{$reset_color%}%{$reset_color%}:%{$fg_bold[blue]%}%~%{$reset_color%}%(!.#.$)"
+#PROMPT="%{$fg[green]%}%T%{$reset_color%}%{$reset_color%} %{$fg_bold[blue]%}%~%{$reset_color%}%(!.#.$) "
+PROMPT="%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%} %{$fg_bold[blue]%}%~%{$reset_color%}%(!.#.$) "
 
 #RPROMPT="%{$fg[green]%}%T%{$reset_color%}"
 SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '

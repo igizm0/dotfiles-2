@@ -1,0 +1,6 @@
+include ~/.nano/syntax/shell.nanorc
+include ~/.nano/syntax/awk.nanorc
+include ~/.nano/syntax/markdown.nanorc
+include ~/.nano/syntax/nginx.nanorc
+include ~/.nano/syntax/python.nanorc
+include ~/.nano/syntax/sed.nanorc

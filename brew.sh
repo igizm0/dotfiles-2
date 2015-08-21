@@ -18,5 +18,7 @@ brew install grc
 brew install nmap
 brew install p7zip
 brew install wget --with-iri
+brew install exiftool
+brew install unrar
 
 chsh -s /bin/zsh

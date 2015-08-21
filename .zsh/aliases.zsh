@@ -9,3 +9,10 @@ hash -d svn=/Users/pavel/Documents/Paragon/SVN/
 hash -d hdm=/Users/pavel/Documents/Paragon/SVN/HDM
 hash -d ufsd=/Users/pavel/Documents/Paragon/SVN/UFSD
 
+if [ -x /usr/local/bin/grc ]; then
+  # brew install grc
+  alias diff="grc --colour=auto diff"
+  alias netstat="grc --colour=auto netstat"
+  alias ping="grc --colour=auto ping"
+  alias traceroute="grc --colour=auto traceroute"
+fi
